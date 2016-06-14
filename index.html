@@ -1,63 +1,377 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<link rel="stylesheet" href="bootstrap.css">
-	<link rel="stylesheet" href="bootstrap.min.css">
-	<link rel="stylesheet" href="bootstrap-theme.css">
-	<link rel="stylesheet" href="bootstrap-theme.min.css">
-	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ML</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-		<div class="row header">
-				<div class="col-md-2">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-					<font color="white">Start Bootstrap</font>
-				</div>
-				<div class="col-md-1">About</div>
-				<div class="col-md-1">Services</div>
-				<div class="col-md-1">Contact</div>
-		</div>
-	<div class="container">
-		<div class="row next">
-			<div class="col-md-2">
-			<h3>Portfolio Item</h3>
-			</div>
-			<div class="col-md-2 right">
-			Item Subheading
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-8">
-			<img src="car.jpg" width="750px" height="500px">
-			</div>
-			<div class="col-md-4">
-				<div class="row">
-					<h3>Project Description</h3>
-				</div>
-				<div class="row"><font color="#3C3B3B">
-					BMW newest M2 is a proper sports car, through and through. It is the kind of car that brings you back to the old days of sports cars, where handling and feel mattered more than connectivity and technology. So, naturally, most car enthusiasts who want to buy a BMW M2 would opt for the six-speed manual version of it.</font>
-				</div>
-				<div class="row">
-					<h3>Project Details</h3>
-				</div>
-				<div class="row"><font color="#3C3B3B">
-					<ul>
-						<li>Lorem Ipsum</li>
-						<li>Dolor Sit Amet</li>
-						<li>Consecutur</li>
-						<li>Adipiscing elit</li>
-					</ul></font>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<h3>&nbsp&nbspRelated Projects</h3>
-		</div>
-		<div class="row">
-			<div class="col-md-3"><img src="img1.jpg" width="100%" height="100%"></div>
-			<div class="col-md-3"><img src="img2.jpg" width="100%" height="100%"></div>
-			<div class="col-md-3"><img src="img3.jpg" width="100%" height="100%"></div>
-			<div class="col-md-3"><img src="img4.jpg" width="100%" height="100%"></div>
-		</div>
-	</div>
-	<br />
-	<br />
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">CodeBros</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#work">Work Accomplished</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#timeline">Timeline</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#contri">Individual Contribution</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Handwriting Recongnition Using</div>
+                <div class="intro-heading">Machine Learning</div>
+              <!--  <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Work Accomplished</h2>
+                  <!--  <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                </div>
+            </div>
+            <div class="row text-center">
+
+                <div class="col-md-3">
+                    <!--<span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>-->
+                    <span><img src="icon1.jpg" class="img-circle" alt="Cinque Terre" width="240" height="180"></span>
+                    <h4 class="service-heading">Model</h4>
+                    <p class="text-muted">Our model consists of five layers i.e. two convolution-pooling layers and one fully-connected hidden layer with 100 neurons.  </p>
+                </div>
+                <div class="col-md-3">
+                  <!--  <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>-->
+                    <span><img src="icon2.png" class="img-circle" alt="Cinque Terre" width="240" height="180"></span>
+                    <h4 class="service-heading">Image Processing</h4>
+                    <p class="text-muted">Processed handwritten images to resemble the images of training-set.  </p>
+                </div>
+                <div class="col-md-3">
+                 <!--   <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>-->
+                    <span><img src="icon3.jpg" class="img-circle" alt="Cinque Terre" width="240" height="180"></span>
+                    <h4 class="service-heading">Digit Recognition</h4>
+                    <p class="text-muted">Our model takes images of handwritten digits as input and predicts the number.</p>
+                </div>
+                <div class="col-md-3">
+                  <!--  <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>-->
+                    <span><img src="icon4.jpg" class="img-circle" alt="Cinque Terre" width="240" height="180"></span>
+                    <h4 class="service-heading">Segmentation</h4>
+                    <p class="text-muted"> If input image has many digits, we have developed a segmentation algorithm which
+clips out digits and then forwards it to model.  </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Timeline -->
+    <section id="timeline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Timeline</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>19 May - 22 May</h4>
+                                   <h4 class="subheading">Theory</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Gone through basics of machine learning like linear regression,logistic regression,cost function, gradient descent etc. 
+</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>23 May - 26 May</h4>
+                                    <h4 class="subheading">Installation</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">The programming language that we are using is lua and are now well versed with its basic documentation. 
+We have also gone through basics of torch packages like nn and optim.
+</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>27 May - 30 May</h4>
+                                    <h4 class="subheading">Model</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">We have already worked on a neural network which is trained by MNIST dataset to recognize handwritten digits from 0 to 9 within accuracy of 92%.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>31 May - 3 June</h4>
+                                    <h4 class="subheading">Image Processing</h4>
+                                    </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Worked on image processing by using scaling, normalization and translating
+the image so that it resembles MNIST trainset images.</p>
+                                </div>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/5.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>4 June - 8 June</h4>
+                                    <h4 class="subheading">Improved Model</h4>
+                                    </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Improved our model by adding two convolution-pooling layers and one fully-connected hidden layer with 100 neurons which increased accuracy upto 97.77%</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/6.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>8 June - 11 June</h4>
+                                    <h4 class="subheading">Segmentation</h4>
+                                    </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Developed a function for segmenting the image into individual digits, applying above
+methods to get the image recognized.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>14 May
+                                    <br>2016
+                                    <br>:-)</h4>
+                            </div>
+                        </li>
+                         <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/7.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Future Plans</h4>
+                                    </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">After segmentation, the model doesn’t clips all but 8 out of 10 images in a general mobile number.We
+are working on the code to fix the bug of segmentation. We also have to incorporate a character
+dataset (a to z and A to Z), so that it recognises a whole message of handwritten text, which is our
+final task.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Individual contribution -->
+<section id="contri">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Individual Contribution</h2>
+                  <!--  <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                </div>
+            </div>
+            <div class="row text-center">
+
+                <div class="col-md-6">
+                    <h4 class="service-heading">Pratham And Pritesh</h4>
+                    <p class="text-muted">Model takes the input as an image and recognizes the digit by comparing the probabilities of it
+being each of the digit. Worked on image processing by using scaling, normalization and translating
+the image. Developed a function for segmenting the image into individual digits, applying above
+methods to get the image recognized. All for increasing the accuracy of the model.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="service-heading">Chaitanya And Bishal</h4>
+                    <p class="text-muted"> Found new methods and techniques in configuring the model such that it helps in increasing accuracy.
+Changed the nodes and layers and also applied convolution method to the model and regression using
+dropout due to which the model surpasses the accuracy of 97 (approx. 97.53) on the validation
+dataset of MNIST compared to human accuracy of 96.8 percent.  </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="pratham.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Pratham Kumar Verma</h4>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://www.facebook.com/pratham.verma.1238"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="pritesh.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Pritesh Kumbhare</h4>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://www.facebook.com/pritesh.kumbhare"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="chaitanya.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Chaitanya Dhawan</h4>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://www.facebook.com/dhawan.chaitanya"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="bishal.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Bishal</h4>
+                        <ul class="list-inline social-buttons">
+                            
+                            <li><a href="https://www.facebook.com/yobishal"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
 </html>
