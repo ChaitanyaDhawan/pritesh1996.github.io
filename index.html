@@ -124,7 +124,7 @@
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>-->
                     <span><img src="icon3.jpg" class="img-circle" alt="Cinque Terre" width="240" height="180"></span>
-                    <h4 class="service-heading">AplhaNumeric Recognition</h4>
+                    <h4 class="service-heading">AlphaNumeric Recognition</h4>
                     <p class="text-muted">Our model takes images of handwritten text as input and predicts the output.</p>
                 </div>
                 <div class="col-md-3">
@@ -159,7 +159,7 @@ clips out every character and then forwards it to model.  </p>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>19 May - 22 May</h4>
+                                    
                                    <h4 class="subheading">Theory</h4>
                                 </div>
                                 <div class="timeline-body">
@@ -174,7 +174,7 @@ clips out every character and then forwards it to model.  </p>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>23 May - 26 May</h4>
+                                    
                                     <h4 class="subheading">Installation</h4>
                                 </div>
                                 <div class="timeline-body">
@@ -190,7 +190,7 @@ We have also gone through basics of torch packages like nn and optim.
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>27 May - 30 May</h4>
+                                    
                                     <h4 class="subheading">Model</h4>
                                 </div>
                                 <div class="timeline-body">
@@ -204,7 +204,6 @@ We have also gone through basics of torch packages like nn and optim.
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>31 May - 3 June</h4>
                                     <h4 class="subheading">Image Processing</h4>
                                     </div>
                                 <div class="timeline-body">
@@ -219,11 +218,10 @@ the image so that it resembles MNIST trainset images.</p>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>4 June - 8 June</h4>
                                     <h4 class="subheading">Improved Model</h4>
                                     </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Improved our model by adding two convolution-pooling layers and one fully-connected hidden layer with 100 neurons which increased accuracy upto 97.77%</p>
+                                    <p class="text-muted">Improved our model by adding two convolution-pooling layers and one fully-connected hidden layer with 100 neurons which increased accuracy over 90%.</p>
                                 </div>
                             </div>
                         </li>
@@ -233,20 +231,12 @@ the image so that it resembles MNIST trainset images.</p>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>8 June - 11 June</h4>
                                     <h4 class="subheading">Segmentation</h4>
                                     </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Developed a function for segmenting the image into individual digits, applying above
+                                    <p class="text-muted">Developed a function for segmenting the image into individual characters, applying above
 methods to get the image recognized.</p>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>14 May
-                                    <br>2016
-                                    <br>:-)</h4>
                             </div>
                         </li>
                          <li class="timeline-inverted">
@@ -258,13 +248,18 @@ methods to get the image recognized.</p>
                                     <h4 class="subheading">Future Plans</h4>
                                     </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">After segmentation, the model doesn’t clips all but 8 out of 10 images in a general mobile number.We
-are working on the code to fix the bug of segmentation. We also have to incorporate a character
-dataset (a to z and A to Z), so that it recognises a whole message of handwritten text, which is our
-final task.</p>
+                                    <p class="text-muted">After segmentation, the characters get recognized including SPACES and then furthur words. After the words are recognized, they are corrected if some letters are wrongly recognized using a dictionary spell-corrector. Given a paragraph of multiple lines, finally it can be recognized.</p>
                                 </div>
                             </div>
                         </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>26 May
+                                    <br>2016
+                                    <br>:-)</h4>
+                            </div>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
